@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>invoice-generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="invoice-generator.css">
+
+</head>
+<body>
+
+    <invoice-generator></invoice-generator>  
+
+    <!-- <img src="form-screenshot.png" alt="screenshot of the form" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;"> -->
+<script type="module">
+import {InvoiceGenerator} from './InvoiceGenerator.js'
+
+window.InvoiceGenerator = document.querySelector('invoice-generator')
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+<CityStateLookupRequest USERID="yourUserID">
+    <ZipCode ID="0">
+        <Zip5>01002</Zip5>
+    </ZipCode>
+</CityStateLookupRequest>

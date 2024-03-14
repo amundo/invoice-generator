@@ -1,0 +1,14 @@
+@import url('../line-item/line-item.css');
+
+line-item {
+  
+  .quantity {
+    display: inline-flex;
+    gap: .4em;
+    align-items: baseline;
+  }
+
+  .description {
+    display: grid;
+  }
+}

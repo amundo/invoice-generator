@@ -1,0 +1,116 @@
+{
+  "annotations": {
+    "DMS": {
+      "lat": "42° 23' 4.76484'' N",
+      "lng": "72° 31' 13.50948'' W"
+    },
+    "FIPS": {
+      "county": "25015",
+      "state": "25"
+    },
+    "MGRS": "18TYM0411795464",
+    "Maidenhead": "FN32rj72nh",
+    "Mercator": {
+      "x": -8072936.145,
+      "y": 5189962.537
+    },
+    "OSM": {
+      "note_url": "https://www.openstreetmap.org/note/new#map=17/42.38466/-72.52042&layers=N",
+      "url": "https://www.openstreetmap.org/?mlat=42.38466&mlon=-72.52042#map=17/42.38466/-72.52042"
+    },
+    "UN_M49": {
+      "regions": {
+        "AMERICAS": "019",
+        "NORTHERN_AMERICA": "021",
+        "US": "840",
+        "WORLD": "001"
+      },
+      "statistical_groupings": [
+        "MEDC"
+      ]
+    },
+    "callingcode": 1,
+    "currency": {
+      "alternate_symbols": [
+        "US$"
+      ],
+      "decimal_mark": ".",
+      "disambiguate_symbol": "US$",
+      "html_entity": "$",
+      "iso_code": "USD",
+      "iso_numeric": "840",
+      "name": "United States Dollar",
+      "smallest_denomination": 1,
+      "subunit": "Cent",
+      "subunit_to_unit": 100,
+      "symbol": "$",
+      "symbol_first": 1,
+      "thousands_separator": ","
+    },
+    "flag": "🇺🇸",
+    "geohash": "drs3jgbhxb8ndjz09rbj",
+    "qibla": 59.44,
+    "roadinfo": {
+      "drive_on": "right",
+      "speed_in": "mph"
+    },
+    "sun": {
+      "rise": {
+        "apparent": 1710155340,
+        "astronomical": 1710149700,
+        "civil": 1710153660,
+        "nautical": 1710151680
+      },
+      "set": {
+        "apparent": 1710197520,
+        "astronomical": 1710116700,
+        "civil": 1710199200,
+        "nautical": 1710201120
+      }
+    },
+    "timezone": {
+      "name": "America/New_York",
+      "now_in_dst": 1,
+      "offset_sec": -14400,
+      "offset_string": "-0400",
+      "short_name": "EDT"
+    },
+    "what3words": {
+      "words": "slice.switch.sake"
+    }
+  },
+  "bounds": {
+    "northeast": {
+      "lat": 42.5446569,
+      "lng": -72.3604193
+    },
+    "southwest": {
+      "lat": 42.2246569,
+      "lng": -72.6804193
+    }
+  },
+  "components": {
+    "ISO_3166-1_alpha-2": "US",
+    "ISO_3166-1_alpha-3": "USA",
+    "ISO_3166-2": [
+      "US-MA"
+    ],
+    "_category": "postcode",
+    "_normalized_city": "Amherst",
+    "_type": "postcode",
+    "continent": "North America",
+    "country": "United States",
+    "country_code": "us",
+    "county": "Hampshire County",
+    "postcode": "01002",
+    "state": "Massachusetts",
+    "state_code": "MA",
+    "town": "Amherst"
+  },
+  "confidence": 3,
+  "formatted": "Amherst, MA 01002, United States of America",
+  "geometry": {
+    "lat": 42.3846569,
+    "lng": -72.5204193
+  }
+}

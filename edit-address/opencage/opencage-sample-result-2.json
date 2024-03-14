@@ -1,0 +1,115 @@
+{
+  "annotations": {
+    "DMS": {
+      "lat": "40° 42' 45.82116'' N",
+      "lng": "74° 0' 21.65472'' W"
+    },
+    "FIPS": {
+      "state": "36"
+    },
+    "MGRS": "18TWL8395807343",
+    "Maidenhead": "FN20xr91gb",
+    "Mercator": {
+      "x": -8238311.928,
+      "y": 4942184.259
+    },
+    "OSM": {
+      "edit_url": "https://www.openstreetmap.org/edit?relation=175905#map=17/40.71273/-74.00602",
+      "note_url": "https://www.openstreetmap.org/note/new#map=17/40.71273/-74.00602&layers=N",
+      "url": "https://www.openstreetmap.org/?mlat=40.71273&mlon=-74.00602#map=17/40.71273/-74.00602"
+    },
+    "UN_M49": {
+      "regions": {
+        "AMERICAS": "019",
+        "NORTHERN_AMERICA": "021",
+        "US": "840",
+        "WORLD": "001"
+      },
+      "statistical_groupings": [
+        "MEDC"
+      ]
+    },
+    "callingcode": 1,
+    "currency": {
+      "alternate_symbols": [
+        "US$"
+      ],
+      "decimal_mark": ".",
+      "disambiguate_symbol": "US$",
+      "html_entity": "$",
+      "iso_code": "USD",
+      "iso_numeric": "840",
+      "name": "United States Dollar",
+      "smallest_denomination": 1,
+      "subunit": "Cent",
+      "subunit_to_unit": 100,
+      "symbol": "$",
+      "symbol_first": 1,
+      "thousands_separator": ","
+    },
+    "flag": "🇺🇸",
+    "geohash": "dr5regw2yfe6yqpz8xx4",
+    "qibla": 58.48,
+    "roadinfo": {
+      "drive_on": "right",
+      "speed_in": "mph"
+    },
+    "sun": {
+      "rise": {
+        "apparent": 1710155640,
+        "astronomical": 1710150180,
+        "civil": 1710154020,
+        "nautical": 1710152100
+      },
+      "set": {
+        "apparent": 1710197880,
+        "astronomical": 1710116940,
+        "civil": 1710199560,
+        "nautical": 1710201420
+      }
+    },
+    "timezone": {
+      "name": "America/New_York",
+      "now_in_dst": 1,
+      "offset_sec": -14400,
+      "offset_string": "-0400",
+      "short_name": "EDT"
+    },
+    "what3words": {
+      "words": "port.precautions.worry"
+    },
+    "wikidata": "Q60"
+  },
+  "bounds": {
+    "northeast": {
+      "lat": 40.91763,
+      "lng": -73.700233
+    },
+    "southwest": {
+      "lat": 40.476578,
+      "lng": -74.258843
+    }
+  },
+  "components": {
+    "ISO_3166-1_alpha-2": "US",
+    "ISO_3166-1_alpha-3": "USA",
+    "ISO_3166-2": [
+      "US-NY"
+    ],
+    "_category": "place",
+    "_normalized_city": "City of New York",
+    "_type": "city",
+    "city": "City of New York",
+    "continent": "North America",
+    "country": "United States",
+    "country_code": "us",
+    "state": "New York",
+    "state_code": "NY"
+  },
+  "confidence": 2,
+  "formatted": "City of New York, New York, United States of America",
+  "geometry": {
+    "lat": 40.7127281,
+    "lng": -74.0060152
+  }
+}

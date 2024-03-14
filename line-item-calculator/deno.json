@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css line-item-calculator-docs.css --template=template.html -o line-item-calculator-docs.html line-item-calculator-docs.md"
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --color-dark: 230 35% 7%;
+  --color-light: 231 77% 90%;
+  --color-white: 0 0% 100%;
+  
+  /* body text size */
+  --font-size-900: 9.375rem;
+  --font-size-800: 6.25rem;
+  --font-size-700: 3.5rem;
+  --font-size-600: 2rem;
+  --font-size-500: 1.75rem;
+  --font-size-400: 1.125rem;
+  --font-size-300: 1rem;
+  --font-size-200: 0.875rem;
+
+  --font-family-sans: 'Open Sans', sans-serif;
+  --font-family-sans-condensed: 'Roboto Condensed', sans-serif;
+  --font-family-sans-normal: 'Roboto', sans-serif;
+  --font-family-serif:  'Merriweather', serif;
+}
+
+.sans {
+  font-family: var(--font-family-sans);
+}
+.serif {
+  font-family: var(--font-family-serif);
+}
+
+.condensed {
+  font-family: var(--font-family-sans-condensed);
+}
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-300);
+  background-color: hsl(var(--color-accent));
+  color: hsl(var(--color-white));
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  max-width: var(--max-width, 40rem);
+  /* margin left and right */
+  margin-inline: auto; 
+}
+
+.container > div {
+  --padding: 2rem;
+  padding: var(--padding, 1rem);
+}
+/* screenreader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* colors */
+
+.background-dark  { background-color: hsl(var(--color-dark)); }
+.background-accent { background-color: hsl(var(--color-light)); }
+.background-white { background-color: hsl(var(--color-white)); } 
+
+.text-dark  { color: hsl(var(--color-dark)); }
+.text-accent { color: hsl(var(--color-light)); }
+.text-white { color: hsl(var(--color-white)); } 
+
+/* components */
+
+.example {
+  background-color: hsl( var(--color-light) / .2);
+}

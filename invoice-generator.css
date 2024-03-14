@@ -1,0 +1,98 @@
+@import url(reset.css);
+@import url(colors.css);
+@import url(print.css);
+@import url(typography.css);
+@import url(add-logo/add-logo.css);
+@import url(choose-currency/choose-currency.css);
+@import url(edit-address/edit-address.css);
+@import url(line-item-calculator/line-item-calculator.css);
+
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+label,h1,h2 {color : maroon; font-family: system-ui !important; font-weight:bold; text-transform: uppercase; font-size: 1rem; }
+
+
+invoice-generator {
+
+  background: var(--gray-800);
+  display: block;
+  display: grid;
+  gap: 0 1em;
+  grid-template-columns: [invoice-start] 8fr [invoice-end sidebar-start] 1fr [sidebar-end];
+  
+  margin: 0;
+
+  aside#sidebar {
+    grid-area: sidebar;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.25); /* Inner shadow */
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: .5em;
+
+    button#print-pdf {
+      background: green;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      border:none;;
+    }
+  }
+
+  main#invoice {
+    grid-area: invoice;
+    background: var(--gray-900);
+
+    padding: 1em;
+    margin: 1em;
+    /* border: 2px solid var(--gray-600); */
+    
+    header#invoice-header {
+      display: grid;
+      grid-template: repeat(3,1fr) / repeat(6, 1fr);
+      add-logo {
+        grid-column: 1;
+        grid-row: 1 / -1;
+      }
+      :is(h1,h2) {
+        grid-column: -1;
+        grid-row: 1;
+        label {
+          display: flex;
+        }
+      }
+      h2 {
+        grid-column: -1;
+        grid-row: 2;
+      }
+      
+      div:has(input[type=date]){
+        grid-column: -1;
+      }
+    }
+
+    edit-address[id*=address]{
+    }
+  }
+}
+
+
+
+
+@media print {
+  [data-html2canvas-ignore],
+  button,
+  input {
+     border:none;
+    display: none;
+  }
+
+  [src="form-screenshot.png"]{
+    display: none;
+  }
+}

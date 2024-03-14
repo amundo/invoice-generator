@@ -1,0 +1,20 @@
+@media print {
+  main {
+    width: 8.5in;
+    /* Removed the fixed height to allow content to flow naturally */
+  }
+  
+  aside#sidebar {
+    display: none !important;
+  }
+  
+  /* Example: Adjust font sizes for print */
+  body {
+    font-size: 12pt;
+  }
+
+  /* Example: Ensure page breaks behave as expected */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+}

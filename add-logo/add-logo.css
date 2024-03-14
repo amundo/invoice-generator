@@ -1,0 +1,12 @@
+
+add-logo {
+  display: block;
+  width:200px;
+  figure {
+    max-width: 100%;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}

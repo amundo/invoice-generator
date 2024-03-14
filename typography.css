@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  /* Base line heights */
+  --base-line-height: 1.5; /* Default line height */
+  --heading-line-height: 1.2; /* For headings */
+  --body-line-height: 1.6; /* For body text */
+
+  /* Font families */
+  --body-font-family: 'Open Sans', sans-serif;
+  --heading-font-family: 'Merriweather', serif;
+  --interactive-font-family: 'Roboto', sans-serif;
+  --info-font-family: 'Arial', sans-serif;
+  --data-display-font-family: 'Source Code Pro', monospace;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-small: 0.875rem;
+  --font-size-navigation: 1rem;
+  --font-size-interactive: 1rem;
+  --font-size-info: 0.875rem;
+  --font-size-body: 1rem;
+  --font-size-heading: 2rem;
+  --font-size-subheading: 1.5rem;
+
+  /* Functional font sizes */
+  --base-font-size: 16px; /* Default font size */
+  --small-font-size: 0.875rem; /* For fine print and legal */
+  --navigation-font-size: 1rem; /* For navigation text */
+  --interactive-font-size: 1rem; /* For buttons and interactive elements */
+  --info-font-size: 0.875rem; /* For informational text */
+  --body-font-size: 1rem; /* For body text */
+  --heading-font-size: 2rem; /* For main headings */
+  --subheading-font-size: 1.5rem; /* For subheadings */
+  --data-display-font-size: 0.875rem; /* For tables, charts, graphs */
+  --hero-font-size: 3rem; /* For hero text */
+  --quote-font-size: 1.25rem; /* For quotes and pull-outs */
+
+
+  /* Base line-height sizes */
+  --base-line-height: 1.4rem; /* Default font size */
+  --small-line-height: 1rem; /* For fine print and legal */
+  --navigation-line-height: 1.2rem; /* For navigation text */
+  --interactive-line-height: 2rem; /* For buttons and interactive elements */
+  --info-line-height: 1.2rem; /* For informational text */
+  --body-line-height: 1.4rem; /* For body text */
+  --heading-line-height: 3rem; /* For main headings */
+  --subheading-line-height: 2rem; /* For subheadings */
+  --data-display-line-height: 1rem; /* For tables, charts, graphs */
+  --hero-line-height: 4.5rem; /* For hero text */
+  --quote-line-height: 1.75rem; /* For quotes and pull-outs */
+
+
+  /* basic colors with shades */
+  --color-primary: lch(52 76 280);
+  --color-secondary: lch(49 6 250);
+  --color-success: lch(60 64 140);
+  --color-info: lch(61 37 220);
+  --color-warning: lch(82 84 81);
+  --color-highlight: lch(97.83 22.59 99.01);
+  --color-danger: lch(50 73 27);
+  --color-light: lch(98 0.64 250);
+  --color-dark: lch(24 4.9 250);
+  --color-white: lch(100 0 none);
+  --color-black: lch(0 0 none);
+  --color-gray-100: lch(98 0.64 250);
+  --color-gray-200: lch(93 1.9 250);
+  --color-gray-300: lch(90 2.6 250);
+  --color-gray-400: lch(85 3.9 250);
+  --color-gray-500: lch(73 5.4 250);
+  --color-gray-600: lch(49 6 250);
+  --color-gray-700: lch(34 5.4 250);
+  --color-gray-800: lch(24 4.9 250);
+  --color-gray-900: lch(14 3.5 250);
+
+}
+
+
+.body-text {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+.primary-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--font-size-heading);
+  line-height: var(--heading-line-height);
+}
+
+.secondary-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--subheading-font-size);
+  line-height: var(--subheading-line-height);
+}
+
+.tertiary-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--subheading-font-size);
+  line-height: var(--subheading-line-height);
+  font-style: italic;
+}
+
+
+.highlight-text {
+  background-color: lemonchiffon;
+}
+
+.caption-text {
+  font-size: var(--small-font-size);
+  font-family: var(--info-font-family);
+}
+
+.subtext {
+  font-size: var(--small-font-size);
+  font-family: var(--info-font-family);
+  color: var(--color-gray-700);
+}
+
+.body-font {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+}
+
+.heading-font {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size);
+}
+
+.interactive-font {
+  font-family: var(--interactive-font-family);
+  font-size: var(--interactive-font-size);
+}
+
+.info-font {
+  font-family: var(--info-font-family);
+  font-size: var(--info-font-size);
+}
+
+.data-display-font {
+  font-family: var(--data-display-font-family);
+  font-size: var(--data-display-font-size);
+}
+
+.link-text {
+  font-size: var(-- body-font-size);
+}
+
+.button-text {
+  font-family: var(--interactive-font-family);
+}
+
+.info-text {
+  font-family: var(--info-font-family);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+/* Usage examples */
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+h1, .hero-text {
+  font-size: var(--hero-font-size);
+  font-family: var(--heading-font-family);
+  line-height: var(--heading-line-height);
+  font-weight: var(--font-weight-bold);
+}
+
+.navigation, .menu-item {
+  font-size: var(--navigation-font-size);
+  font-family: var(--interactive-font-family);
+  font-weight: var(--font-weight-regular);
+}
+
+.button, .cta {
+  font-size: var(--interactive-font-size);
+  font-family: var(--interactive-font-family);
+  font-weight: var(--font-weight-bold);
+}
+
+.body-text {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+.data-display {
+  font-size: var(--data-display-font-size);
+  font-family: var(--data-display-font-family);
+}
+
+.quote, .pull-out {
+  font-size: var(--quote-font-size);
+  font-family: var(--heading-font-family);
+  font-weight: var(--font-weight-regular);
+}
+
+.fine-print, .legal {
+  font-size: var(--small-font-size);
+  font-family: var(--info-font-family);
+}

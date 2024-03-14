@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Style guide</title>
+  <link rel="icon" type="image/png" href="#">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="colors.css">
+  <style>
+
+code.selector {
+  font-family: var(--info-font-family);
+  color: var(--color-gray-600);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
+  border-bottom: 1px solid var(--color-gray-300);
+  line-height: var(--navigation-line-height);
+
+  border-radius: 4px;
+  display: block;
+  margin-top: 2rem;
+}
+  </style>
+</head>
+<body>
+<h1>Style guide</h1>
+
+
+<script type="module" >
+  import {generateLoremIpsum} from './generate-lorem-ipsum.js'
+
+  function processLinkElement(linkElement) {
+  // Fetch the href of the link element
+  const href = linkElement.getAttribute('href');
+
+  // Find the stylesheet in document.styleSheets
+  const styleSheets = Array.from(document.styleSheets)
+
+  const styleSheet = styleSheets.find(sheet => sheet.href.endsWith(linkElement.href))
+
+  if (styleSheet) {
+    let h2 = document.createElement('h2')
+    h2.textContent = linkElement.href.split('.')[0]
+    // Assuming access to cssRules is allowed
+    try {
+      const rules = Array.from(styleSheet.cssRules)
+      rules.forEach(rule => {
+        if (rule.type === CSSRule.STYLE_RULE) { // Ensure it's a style rule
+          // Create an element that will match the selector
+          const article = document.createElement('article'); 
+          let div = document.createElement('div')
+          let selector = rule.selectorText.startsWith('.') ? rule.selectorText.slice(1) : rule.selectorText 
+
+          div.classList.add(selector)
+          
+          if(!rule.selectorText.startsWith(':')){
+            div.innerHTML = `${generateLoremIpsum({paragraphs: 1, length: 'short'})}`
+            article.insertAdjacentHTML(`afterbegin`, `<code class=selector>${rule.selectorText}</code> `)
+            article.append(div)
+            document.body.append(article); // Append the element to the page
+          }
+        }
+      });
+    } catch (error) {
+      console.error('Error accessing CSS rules. Check if the stylesheet is same-origin or CORS headers are set.', error);
+    }
+  } else {
+    console.log('Stylesheet not found or not accessible due to CORS policy');
+  }
+}
+
+// Example usage:
+// Assuming there's a link element with id="my-stylesheet"
+const linkElement = document.head.querySelectorAll('link[rel=stylesheet]')
+  .forEach(linkElement => {
+    if (linkElement) {
+      console.log(linkElement)
+      processLinkElement(linkElement);
+    } else {
+      console.log('Link element not found');
+    }
+  })
+  
+
+</script>
+</body>
+</html>

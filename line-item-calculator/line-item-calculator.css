@@ -1,0 +1,74 @@
+@import url('../line-item/line-item.css');
+
+line-item-calculator {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  gap:  1em;
+  border: 2px solid black;
+
+  > * {
+    padding: 0 .54em;
+  }
+  .line-item-headers {
+    border-block-end:2px solid black;
+    background: lightgray;
+    font-family: system-ui;
+    [class$=header]{
+      text-align: center;
+      font-size: small;
+      padding:.2em;
+      font-weight: bold;
+    }
+  }
+  .line-items {
+    input:not([name=description]) {
+      text-align: end;
+    }
+  }
+
+  .monetary-value {
+    display: flex;
+    justify-content: end;
+  }
+
+  section.line-items {
+    gap: 1em;
+  }
+
+  section, line-item {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    display: grid;
+  }
+
+  .calculation {
+    grid-column: 3 / 5;
+    grid-template-columns: subgrid;
+    display: grid;
+
+    label[for=tax-rate-percentage]{
+      display: flex;
+      align-content: end;
+      input {
+        width: 3ch;
+      }
+    }
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    display: grid;
+
+    .line-items-total {
+      grid-column: 3;
+    }
+
+    .tax-rate-percentage {
+      width: 3ch;
+    }
+    .monetary-value {
+      grid-column: 4;
+    }
+  }
+}

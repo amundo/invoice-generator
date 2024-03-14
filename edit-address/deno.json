@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css edit-address-docs.css --template=template.html -o edit-address-docs.html edit-address-docs.md"
+  }
+}

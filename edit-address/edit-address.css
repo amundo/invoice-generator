@@ -1,0 +1,28 @@
+
+edit-address {
+  display: block;
+  form {
+    display: grid;
+    gap: .5em;
+    grid-template-columns: 1fr 1fr;
+    label {
+      display: flex;
+      border-radius: 4px;
+      padding:.5em;
+      gap: .5em;
+      input[type=search]{
+        flex: 1;
+      }
+    }
+    input {
+      border:none;
+      border-block-end: 1px dotted lightgray;
+    }
+    :is(input,button) {
+      grid-column: 1;
+    }
+    [name=search]{
+      grid-column: span 2;
+    }
+  }
+}

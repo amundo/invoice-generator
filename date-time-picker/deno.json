@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css date-time-picker-docs.css --template=template.html -o date-time-picker-docs.html date-time-picker-docs.md"
+  },
+  "fmt": { "semiColons": false }
+}
